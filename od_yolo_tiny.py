@@ -10,8 +10,6 @@ start_time = time.time()
 execution_path = os.getcwd()
 
 
-
-
 def forFrame(frame_number, output_array, output_count):
     print("FOR FRAME " , frame_number)
     print("Output for each object : ", output_array)
@@ -40,7 +38,7 @@ video_detector.setModelPath(os.path.join(execution_path, "models/tiny-yolov3.pt"
 video_detector.loadModel()
 
 video_detector.detectObjectsFromVideo(
-    input_file_path=os.path.join(execution_path, "data/videos/00abd8a7-ecd6fc56.mov"),
+    input_file_path=os.path.join(execution_path, "videos/00abd8a7-ecd6fc56.mov"),
     output_file_path=os.path.join(execution_path, "traffic_detected_yolo_tiny"),
     frames_per_second=10,
     per_second_function=forSeconds,
