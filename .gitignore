@@ -1,9 +1,4 @@
 .venv
-<<<<<<< HEAD
-videos
-data
-=======
+dnn_model
 data
 __pycache__
-dnn_model
->>>>>>> bde9a84 (gg)
