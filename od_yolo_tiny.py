@@ -9,7 +9,6 @@ start_time = time.time()
 # Set the execution path
 execution_path = os.getcwd()
 
-
 def forFrame(frame_number, output_array, output_count):
     print("FOR FRAME " , frame_number)
     print("Output for each object : ", output_array)
@@ -29,8 +28,6 @@ def forMinute(minute_number, output_arrays, count_arrays, average_output_count):
     print("Array for output count for unique objects in each frame : ", count_arrays)
     print("Output average count for unique objects in the last minute: ", average_output_count)
     print("------------END OF A MINUTE --------------")
-
-
 
 video_detector = VideoObjectDetection()
 video_detector.setModelTypeAsTinyYOLOv3()

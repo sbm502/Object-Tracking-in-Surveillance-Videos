@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 
-
 class ObjectDetection:
     def __init__(self, weights_path="dnn_model/yolov4.weights", cfg_path="dnn_model/yolov4.cfg"):
         print("Loading Object Detection")
@@ -36,4 +35,3 @@ class ObjectDetection:
 
     def detect(self, frame):
         return self.model.detect(frame, nmsThreshold=self.nmsThreshold, confThreshold=self.confThreshold)
-
